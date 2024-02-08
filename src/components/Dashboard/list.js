@@ -7,7 +7,7 @@ import { server_url } from "../../constant";
 
 //dependent
 const deleteDataURL = server_url +"/api/v1/url/delete";
-const baseurl = server_url + "api/v1";
+const baseurl = server_url + "/api/v1";
 
 const List = ({ data, fetchData }) => {
   // delete Api for deletin specfic data

@@ -10,7 +10,7 @@ import { server_url } from "../../constant";
 
 
 const backendURL = server_url +"/api/v1/url";
-const baseurl = server_url + "api/v1"
+const baseurl = server_url + "/api/v1"
 
 const Home = () => {
   const { isLoggedIn } = useAuthentication();
