@@ -15,7 +15,7 @@ function Navbar() {
     settogle(!toggle);
   }
   function handleLogout(){
-    document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+    document.cookie.replace("token","") 
     Navigate('/login')
   }
 
@@ -102,7 +102,7 @@ function Navbar() {
             {/* <!-- Dropdown menu --> */}
 
             <div
-              className={`z-50 ${
+              className={`z-50 relative ${
                 toggle ? "hidden" : "visible"
               } my-4 text-base list-none  bg-white divide-y divide-gray-100 rounded-lg shadow`}
               id="user-dropdown"
